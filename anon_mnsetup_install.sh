@@ -3,7 +3,7 @@
 COIN_NAME='ANON' #no spaces
 
 #wallet information
-WALLET_DOWNLOAD='https://github.com/alttankcanada/ANONMasternodeScript/raw/master/anon-linux.zip'
+WALLET_DOWNLOAD=https://www.dropbox.com/s/raw/i0zslq200u6w797/anon-linux.zip'
 WALLET_TAR_FILE='anon-linux.zip'
 ZIPTAR='unzip' #can be either unzip or tar -xfzg
 EXTRACT_DIR='' #not always necessary, can be blank if zip/tar file has no subdirectories
@@ -165,6 +165,7 @@ echo "Basic security completed..."
 echo "Installing sentinel..."
 cd $CONFIG_FOLDER
 sudo apt-get install -y git python-virtualenv
+sudo apt-get install -y virtualenv
 
 git clone https://github.com/anonymousbitcoin/sentinel.git && cd sentinel
 virtualenv ./venv
