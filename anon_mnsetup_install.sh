@@ -30,7 +30,7 @@ FETCHPARAMS='https://raw.githubusercontent.com/anonymousbitcoin/anon/master/anon
 #
 
 echo "=================================================================="
-echo "ALTTANK $COIN_NAME MN DEFAULT INSTALLER"
+echo "$COIN_NAME MN DEFAULT INSTALLER"
 echo "=================================================================="
 echo "Installing packages and updates..."
 sudo apt-get update -y
@@ -224,7 +224,7 @@ echo "==========================================================================
 echo "COPY THIS TO HOT WALLET CONFIG FILE AND REPLACE TxID and OUTPUT"
 echo "WITH THE DETAILS FROM YOUR COLLATERAL TRANSACTION"
 echo "MN1 $WANIP:$PORT $GENKEY TxID OUTPUT"
-echo "Courtesy of AltTank Shared MASTERNODES"
-echo "https://masternodes.alttank.ca"
+echo "Courtesy of AltTank"
+echo "Updated to new binaries by dk808"
 echo "============================================================================="
 sleep 1
