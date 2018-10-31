@@ -18,7 +18,7 @@ ADDNODE3='96.126.112.77'
 PORT='33130'
 RPCPORT='19050'
 
-BOOTSTRAP='https://www.dropbox.com/s/raw/xu4c1twns4x7ove/anon-bootstrap.zip'
+BOOTSTRAP='https://www.dropbox.com/s/raw/qpiptewnx6i7jhc/anon-bootstrap.zip'
 BOOTSTRAP_ZIP='anon-bootstrap.zip'
 
 FETCHPARAMS='https://raw.githubusercontent.com/anonymousbitcoin/anon/master/anonutil/fetch-params.sh'
@@ -164,7 +164,8 @@ echo "Basic security completed..."
 
 echo "Installing sentinel..."
 cd $CONFIG_FOLDER
-sudo apt-get install -y git python-virtualenv
+sudo apt-get -y install python-virtualenv
+sudo apt-get install virtualenv -y
 
 git clone https://github.com/anonymousbitcoin/sentinel.git && cd sentinel
 virtualenv ./venv
